@@ -27,7 +27,7 @@ Replace `data_gen.py` output with a CSV having columns:
 - Holidays: the `holidays` Python package
 - Update `config.py` with your stations and coordinates
 
-## Honest limitations (put these in your write-up)
+## Honest limitations
 - Entrance/platform splits are simulated; public data is station-level
 - "Congestion" = entries / assumed capacity, not measured crowd density
 - Shift behaviour (`max_shift`) is an assumption; validate with surveys if possible
@@ -36,9 +36,3 @@ Replace `data_gen.py` output with a CSV having columns:
 Lag features and nowcasting, quantile forecasts (prediction intervals),
 graph neural net across the line network, SHAP explanations, Docker + deploy to
 Hugging Face Spaces / Render, MLflow experiment tracking.
-
-## Resume bullets
-- Built a station-level congestion forecaster (LightGBM; calendar, weather, event
-  features) that cut MAE by X% vs. a seasonal baseline across 12 stations.
-- Designed an entrance-rebalancing and time-shift recommender that lowered
-  simulated peak utilisation from A% to B%; shipped as a Streamlit heatmap app.
