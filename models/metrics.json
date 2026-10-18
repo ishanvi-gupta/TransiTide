@@ -1,0 +1,6 @@
+{
+  "model_mae": 168.7,
+  "baseline_mae": 223.2,
+  "improvement_pct": 24.4,
+  "wape_pct": 6.43
+}
